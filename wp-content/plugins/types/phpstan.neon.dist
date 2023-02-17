@@ -1,0 +1,64 @@
+parameters:
+    level: 5
+
+    paths:
+        - application
+        - vendor/toolset/types
+        - vendor/toolset/toolset-common
+        - wpcf.php
+
+    scanFiles:
+        - wpcf.php
+        - application/functions.php
+        - application/functions_public.php
+
+    scanDirectories:
+        - vendor/toolset/types
+        - vendor/toolset/toolset-common
+
+    excludePaths:
+        analyse:
+            - vendor/toolset/types
+            - vendor/toolset/toolset-common
+            - application/legacy_aliases
+
+    parallel:
+        processTimeout: 300.0
+
+    bootstrapFiles:
+        - tests/phpstan/bootstrap.php
+
+    ignoreErrors:
+        # Still not fixed: https://github.com/php-stubs/wordpress-stubs/issues/2
+        - '#^Function do_action(_ref_array)? invoked with [3456] parameters, 1-2 required\.$#'
+        - '#^Function current_user_can invoked with 2 parameters, 1 required\.$#'
+        - '#^Function apply_filters invoked with [3456789] parameters, 2 required\.$#'
+        - '#^Function add_query_arg invoked with [123] parameters?, 0 required\.$#'
+        - '#^Function wp_sprintf invoked with [23456] parameters, 1 required\.$#'
+        - '#^Function add_post_type_support invoked with [345] parameters, 2 required\.$#'
+        - '#^Function ((get|add)_theme_support|current_theme_supports) invoked with [2345] parameters, 1 required\.$#'
+
+        # Code with hard dependencies that needs to be refactored.
+        -
+            message: '#Constant WPDDL_LAYOUTS_META_KEY not found.#'
+            path: application/models/helper/create/layout.php
+        -
+            message: '#Constant WPDDL_LAYOUTS_POST_TYPE not found.#'
+            path: application/models/helper/create/layout.php
+        -
+            message: '#Access to an undefined property WP_Views::\$users_data.#'
+            path: application/models/user/service.php
+        -
+            message: '#Access to an undefined property WP_Views::\$taxonomy_data.#'
+            path: application/models/term/service.php
+        -
+            message: '#Parameter \#1 \$wp_installer_instance of function WP_Installer_Setup expects string, null given.#'
+            path: application/bootstrap.php
+
+
+    reportUnmatchedIgnoredErrors: false
+
+    dynamicConstantNames:
+        - TOOLSET_TYPES_YOAST
+
+    treatPhpDocTypesAsCertain: false
