@@ -1,0 +1,301 @@
+.column-action {
+	width: 190px;
+}
+
+.column-ip {
+	width: 110px;
+}
+
+td.column-action {
+	padding-top: 12px;
+}
+
+
+.column-alert {
+	width: 25%;
+}
+
+.column-username {
+	width: 30%;
+}
+.column-username span{
+	/* font-size: 11px; */
+}
+
+td.column-username {
+	font-size: 75% !important;
+}
+
+.column-username img {
+	float: left;
+	margin-right: 4px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
+}
+
+@media all and (max-width: 1400px) {
+	.column-username {
+		width: 15%;
+	}
+	.widefat #the-list > tr > td {
+		padding: 0;
+	}
+}
+
+@media all and (max-width: 1200px) {
+
+	.column-alert {
+		width: 15%;
+	}
+	#sessionsForm .tablenav {
+		overflow: hidden;
+	}
+}
+
+
+
+.wsal-tab {
+    display: none;
+}
+.wsal-tab th {
+    /* padding-left: 20px; */
+}
+
+#wsal-tabs {
+    margin: 0 0 20px;
+}
+
+.form-table {
+	margin-top: 0;
+}
+
+tr.is-current-session {
+	box-shadow: 0 0 0 2px #007cba;
+}
+
+span.description {
+	display: block;
+	padding-top: 5px;
+}
+
+.wsal-ssa {
+	display: inline-block;
+	color: #555;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.wsal-ssa input,
+.wsal-ssa select {
+	margin-bottom: 6px;
+	width: 120px;
+	margin-left: 16px;
+}
+
+.error{
+    border: 1px solid #ff0000!important;
+}
+
+/* Sessions Search */
+.wsal_sessions_search {
+	position: relative;
+	top: 33px;
+	float: right;
+}
+
+.wsal_sessions_search #keyword {
+	width: 200px;
+    height: 28px;
+    margin: 0 4px 0 0;
+}
+
+.wsal_sessions_search #type {
+	margin: 0 4px 0 0;
+}
+
+#wsal_terminate_all {
+	display: inline-block;
+	padding: 2px 10px;
+	height: auto;
+	vertical-align: top;
+}
+
+#wsal_terminate_all .dashicons {
+	margin-top: 3px;
+}
+
+#auto_terminate {
+	margin-top: -2px;
+}
+
+#wsal-termination-loader p {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.wsal-lds-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 64px;
+	height: 19px;
+	margin: 1em 0;
+}
+.wsal-lds-ellipsis div {
+	position: absolute;
+	top: 4px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: #009344;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.wsal-lds-ellipsis div:nth-child(1) {
+	left: 6px;
+	animation: wsal-lds-ellipsis1 0.6s infinite;
+}
+.wsal-lds-ellipsis div:nth-child(2) {
+	left: 6px;
+	animation: wsal-lds-ellipsis2 0.6s infinite;
+}
+.wsal-lds-ellipsis div:nth-child(3) {
+	left: 26px;
+	animation: wsal-lds-ellipsis2 0.6s infinite;
+}
+.wsal-lds-ellipsis div:nth-child(4) {
+	left: 45px;
+	animation: wsal-lds-ellipsis3 0.6s infinite;
+}
+@keyframes wsal-lds-ellipsis1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes wsal-lds-ellipsis3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+@keyframes wsal-lds-ellipsis2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(19px, 0);
+	}
+}
+
+.manage-column.column-action {
+	text-align: center;
+}
+.manage-column.column-action span {
+	margin-left: -35px;
+}
+
+.action.column-action > a,
+.action.column-action > button {
+	margin-bottom: 5px;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+fieldset #multi-sessions-limit {
+	max-width:60px;
+}
+
+fieldset #sessions-error-message {
+	margin-top: 2px;
+}
+
+.fetch-progress-spinner.spinner {
+	float: none;
+	width: 0;
+	margin: -3px 0 0 0;
+}
+
+.fetch-progress-spinner.spinner.is-active {
+	width: 20px;
+}
+
+#sessions-policy-settings.disabled {
+	opacity: 0.5;
+}
+
+.no-results-found {
+	text-align: center;
+}
+
+.no-results-found td {
+	padding: 40px 0;
+}
+
+/* overrides for the admin notice prompting users to upgrade */
+.wsal_notice {
+	margin-top: 0 !important;
+}
+
+.wsal_notice__wrapper {
+	margin: 0 !important;
+}
+
+.wsal_notice__content > p {
+	padding: 4px 2px !important;
+}
+
+.wsal_notice__btns a.button-primary {
+	margin-top: 5px !important;
+	margin-bottom: 0 !important;
+}
+
+.terminate-query-progress {
+	margin-left: 10px;
+}
+
+.session-totals-overview {
+	width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: -24px;
+}
+
+.session-totals-overview table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.session-totals-overview table td, .session-totals-overview table th {
+	padding: 3px 10px;
+}
+
+.session-totals-overview table td.role, .session-totals-overview table th.role {
+	width: 130px;
+}
+
+.session-totals-overview table td.count, .session-totals-overview table th.count {
+	width: 30px;
+	text-align: center;
+}
+
+.session-totals-overview table td.spacer, .session-totals-overview table th.spacer {
+	width: 5px;
+}
+
+.session-totals-overview table tbody tr:last-child td {
+	padding-bottom: 7px;
+}
+
+.session-totals-overview table tfoot th {
+	padding-top: 7px;
+}
+
+.session-totals-overview table tfoot {
+	border-top: 4px double #c3c4c7;
+}

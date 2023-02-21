@@ -1,0 +1,114 @@
+.wizard > .content {
+	clear: both;
+}
+
+.wizard > .content .body {
+	overflow-y: auto;
+	height: 95% !important;
+}
+
+.wizard > .steps .number {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.wizard > .steps > ul > li {
+	width: 20%;
+}
+
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active,
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+	background: #009344;
+}
+
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
+	background: #49ff9d;
+}
+
+.wizard > .steps .error a, .wizard > .steps .error a:hover, .wizard > .steps .error a:active {
+	background: #ff3111 !important;
+}
+
+.wizard > .actions li:first-child a, .wizard > .actions li:last-child a {
+	background: #B0B0B0;
+}
+
+.wizard > .actions .disabled a, .wizard > .actions .disabled a:hover, .wizard > .actions .disabled a:active {
+	cursor: not-allowed;
+	background: #eee !important;
+	color: #fff !important;
+}
+
+.wizard > .content > .body input[type="radio"] {
+	display: inline-block !important;
+	margin-right: 7px !important;
+}
+
+.wizard > .content > .body ul > li {
+	list-style-position: inside !important;
+}
+
+.steps {
+	display: -ms-flexbox;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 25px;
+	text-align: center;
+}
+
+.steps li {
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	font-weight: 700;
+	margin: 0 0 5px;
+	color: #b4b9be;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.form-table input[type="text"],
+.form-table input[type="password"] {
+	width: 250px;
+	margin-bottom: 7px;
+}
+
+.ui-dialog-content .hide {
+	display: none;
+}
+
+.subfield-label,
+.details-syslog .syslog-remote-cover {
+	display: inline-block;
+	width: 160px;
+	margin-bottom: 7px;
+}
+
+.subfield-error {
+	margin-left: 160px;
+}
+
+label.error {
+	color: #8a1f11;
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+input.error {
+	background: rgb(251, 227, 228);
+	border: 1px solid #fbc2c4;
+	color: #8a1f11;
+}
+
+.step-content .spinner {
+	margin: 0px 10px 0 0 !important;
+	float: left !important;
+}
+
+.form-table td fieldset label > label {
+    margin-left: 15px !important;
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+    color: #646970;
+    font-size: 14px;
+}

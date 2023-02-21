@@ -1,0 +1,22 @@
+
+.logs-management-settings .description {
+    margin-top: 13px;
+    max-width: 700px;
+}
+
+.logs-management-settings .notice {
+    padding: 7px 12px;
+    margin-top: 15px;
+    position: relative;
+    display: block;
+    max-width: 600px;
+}
+
+.logs-management-settings input[type=button] {
+    min-width: 155px;
+    margin-left: 5px;
+}
+
+p.submit {
+    display: none !important;
+}

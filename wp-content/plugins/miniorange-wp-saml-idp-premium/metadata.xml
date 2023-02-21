@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://challenge.fieldx.org/wp-content/plugins/miniorange-wp-saml-idp-premium/">
+  <IDPSSODescriptor WantAuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEcjCCA1qgAwIBAgIUMUIAa8ZjwDp2XMIoImUr5i9yVRMwDQYJKoZIhvcNAQELBQAwgbcxEzARBgNVBAMMCm1pbmlPcmFuZ2UxCzAJBgNVBAYTAlVTMRAwDgYDVQQIDAdXeW9taW5nMREwDwYDVQQHDAhDaGV5ZW5uZTEtMCsGA1UECgwkbWluaU9yYW5nZSBTZWN1cml0eSBTb2Z0d2FyZSBQdnQgTHRkMRYwFAYDVQQLDA1Xb3JkUHJlc3MgSURQMScwJQYJKoZIhvcNAQkBFhhzYW1sc3VwcG9ydEB4ZWN1cmlmeS5jb20wHhcNMjIwNDIxMTI0ODQwWhcNMjMwNjE1MTI0ODQwWjCBtzETMBEGA1UEAwwKbWluaU9yYW5nZTELMAkGA1UEBhMCVVMxEDAOBgNVBAgMB1d5b21pbmcxETAPBgNVBAcMCENoZXllbm5lMS0wKwYDVQQKDCRtaW5pT3JhbmdlIFNlY3VyaXR5IFNvZnR3YXJlIFB2dCBMdGQxFjAUBgNVBAsMDVdvcmRQcmVzcyBJRFAxJzAlBgkqhkiG9w0BCQEWGHNhbWxzdXBwb3J0QHhlY3VyaWZ5LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANGQF0kXEcO6tU6y3IC0YFcN2FXQS+KgR8KJs79xnLa4rBBUipkUsboFGtUSWOzh+DSyOukM8vhA/zmrlwVDuQt0gNPzlstGxyB1QQUXV8EwJRU+7HmtsyR0Zi3XciBNLKHATqvRrPyK77io4wqZMolD2ZD3DcLSNQHtm4j72EbkHvlpxGtO2u4W9TSP4tlF/GuocPQN2FLVrdPUFCFE0XcJSErmx42Ltn/3nFdvDbT1YGqNC5eZiig5Vj+AjCBHPLKTDuwUcIzFN4SJbsJ6mJ0Zn1cpl9grjXYnzNe5SRGsQo18K7ORJKQz+5F8EyheP2ubQGJCoHpmZjsEhjtY+BcCAwEAAaN0MHIwHQYDVR0OBBYEFEnFuhuu6VXAL6J4PHz80XXZ9buLMB8GA1UdIwQYMBaAFEnFuhuu6VXAL6J4PHz80XXZ9buLMA4GA1UdDwEB/wQEAwIFoDAgBgNVHSUBAf8EFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAC1wjBGa8xwmjmOMpvHwO9r0vCK8hOMBb9rGn876FA+Cq2lMbaT9k9cIXwQd10lC06yDOa+SHa5HYvhGZFW8n7tdvisrsOcAlHDNwTCvPTu91+EPmIdyvzEp3UdaqM6afm2NirK3ePurzSepmo+9nQjAkf20Osucal1Ca1v4+wcnVYCgecmWHsxIVX+nRry/pFLD0hBLvG/2SasuduJtDasj2gqJ6vjXNKfQk0LOq1/yAFX7Yzrk9bnv6wgITZ83QxUIJxexUOhYY5ju2CEflmn5uiXBHWletY8s1Un/hmXZthJlsY0i17eePaorvjqqJCxEzDIOd1vR95beIWZuci4=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://challenge.fieldx.org/"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://challenge.fieldx.org/"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://challenge.fieldx.org/"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://challenge.fieldx.org/"/>
+  </IDPSSODescriptor>
+  <md:Organization xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+    <md:OrganizationName xml:lang="en-US">miniOrange</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en-US">miniOrange</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en-US">https://miniorange.com</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" contactType="technical">
+    <md:GivenName>miniOrange</md:GivenName>
+    <md:SurName>Support</md:SurName>
+    <md:EmailAddress>info@xecurify.com</md:EmailAddress>
+  </md:ContactPerson>
+</EntityDescriptor>
