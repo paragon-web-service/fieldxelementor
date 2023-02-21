@@ -6,13 +6,13 @@
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
 /wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/wp-content/plugins/Ithemes-Security-Pro
-/wp-content/plugins/wp-mail-smtp-pro
+#/wp-content/index.php
+#/wp-content/languages
+#/wp-content/plugins/index.php
+#/wp-content/themes/index.php
+#/wp-includes/
+#/wp-content/plugins/Ithemes-Security-Pro
+#/wp-content/plugins/wp-mail-smtp-pro
 
 /index.php
 /license.txt
@@ -32,7 +32,7 @@ wp-config.php.save
 /wp-content/plugins/hello.php
 
 # Uploads
-/wp-content/uploads/
+#/wp-content/uploads/
 
 # Log files
 *.log
